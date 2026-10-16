@@ -1,7 +1,9 @@
 # Spotify Lyrics for KDE Plasma 6
 
-A desktop/panel widget that shows what's playing in Spotify with **synced lyrics** beside the album art, plus
-lots of ways to style it.
+KDE widget for Spotify with a custom layout, effects and playback buttons, keeping live lyrics gorgeously
+updated on your desktop!
+
+![Rainbow lyrics with an album-colored border](screenshots/neon-rainbow-lyrics.png)
 
 By Wesley Berthelot. Inspired by [plasmoid-spotify](https://github.com/LabyStudio/plasmoid-spotify) by
 LabyStudio.
@@ -50,6 +52,14 @@ LabyStudio.
 ### Controls
 - Left-click opens Spotify, middle-click plays/pauses, scroll changes the volume, and the mouse back/forward
   buttons skip tracks.
+
+## Screenshots
+
+![Lyrics and border colors picked from the album art](screenshots/album-colors.png)
+
+| Layout settings | Album art settings |
+| --- | --- |
+| ![Layout settings](screenshots/settings-layout.png) | ![Album art settings](screenshots/settings-album-art.png) |
 
 ## Requirements
 
