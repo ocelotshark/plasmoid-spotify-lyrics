@@ -1,0 +1,25 @@
+{
+  "KPackageStructure": "Plasma/Applet",
+  "X-Plasma-API-Minimum-Version": "6.0",
+  "KPlugin": {
+    "Icon": "view-media-lyrics",
+    "Id": "com.github.ocelotshark.spotifylyrics",
+    "Name": "Spotify Lyrics",
+    "Description": "Synced lyrics next to your Spotify album art, with album-color theming, lyric effects, animated and music-reactive borders, and a soft wallpaper blur behind the text. Inspired by plasmoid-spotify by LabyStudio.",
+    "Version": "2.0.0",
+    "Category": "Multimedia",
+    "Authors": [
+      {
+        "Name": "Wesley Berthelot",
+        "Website": "https://github.com/ocelotshark"
+      }
+    ],
+    "Copyright": "© 2026 Wesley Berthelot",
+    "License": "MIT",
+    "Website": "https://github.com/ocelotshark/plasmoid-spotify-lyrics",
+    "BugReportUrl": "https://github.com/ocelotshark/plasmoid-spotify-lyrics/issues"
+  },
+  "X-Plasma-Provides": [
+    "org.kde.plasma.multimediacontrols"
+  ]
+}

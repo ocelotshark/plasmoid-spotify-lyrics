@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kcfg xmlns="http://www.kde.org/standards/kcfg/1.0"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.kde.org/standards/kcfg/1.0
+      http://www.kde.org/standards/kcfg/1.0/kcfg.xsd">
+    <group name="General">
+        <entry name="playerIdentity" type="String">
+            <label>MPRIS player identity to follow (empty = any, preferring Spotify)</label>
+            <default>Spotify</default>
+        </entry>
+        <entry name="transparentBackground" type="Bool">
+            <default>true</default>
+        </entry>
+        <entry name="volumeStep" type="Int">
+            <default>2</default>
+            <min>1</min>
+            <max>20</max>
+        </entry>
+
+        <!-- Layout -->
+        <entry name="lyricsPosition" type="String">
+            <label>Side of the album art the lyrics go on: left or right</label>
+            <default>right</default>
+        </entry>
+        <entry name="lyricsWidth" type="Int">
+            <label>Width reserved for lyrics, in pixels</label>
+            <default>600</default>
+            <min>60</min>
+            <max>3000</max>
+        </entry>
+        <entry name="infoWidth" type="Int">
+            <label>Width of the title/artist column, in pixels</label>
+            <default>400</default>
+            <min>40</min>
+            <max>1000</max>
+        </entry>
+
+        <entry name="infoPosition" type="String">
+            <label>Title/artist side: opposite (of lyrics), left or right of the art</label>
+            <default>left</default>
+        </entry>
+        <entry name="infoAlignment" type="String">
+            <label>auto (toward the art), left, center or right</label>
+            <default>auto</default>
+        </entry>
+        <entry name="infoVerticalAlignment" type="String">
+            <label>Line title/artist up with the top, middle (center) or bottom of the album art</label>
+            <default>bottom</default>
+        </entry>
+        <entry name="infoOverflow" type="String">
+            <label>What long titles do: elide, wrap or scroll</label>
+            <default>wrap</default>
+        </entry>
+        <entry name="showHoverControls" type="Bool">
+            <label>Show previous / play-pause / next when hovering the album art</label>
+            <default>true</default>
+        </entry>
+
+        <!-- Lyrics -->
+        <entry name="showLyrics" type="Bool">
+            <default>true</default>
+        </entry>
+        <entry name="showUnsyncedLyrics" type="Bool">
+            <label>Fall back to unsynced lyrics when no synced ones exist</label>
+            <default>true</default>
+        </entry>
+        <entry name="useBackupSource" type="Bool">
+            <label>Also search NetEase when lrclib has no synced lyrics or is busy</label>
+            <default>true</default>
+        </entry>
+        <entry name="showLyricsStatus" type="Bool">
+            <label>Show "Searching for lyrics…" while looking</label>
+            <default>false</default>
+        </entry>
+        <entry name="lyricsAlignment" type="String">
+            <label>auto (toward the album art) or center</label>
+            <default>auto</default>
+        </entry>
+        <entry name="lyricsEffect" type="String">
+            <label>Effect on the current lyric line (see LyricLine.qml for the list)</label>
+            <default>neon</default>
+        </entry>
+        <entry name="lyricsEffectIntensity" type="Int">
+            <label>Strength of the current-line effect, in percent</label>
+            <default>100</default>
+            <min>0</min>
+            <max>100</max>
+        </entry>
+        <entry name="highlightCurrentLine" type="Bool">
+            <default>true</default>
+        </entry>
+        <entry name="currentLineOffset" type="Int">
+            <label>Position of current line (+1 more towards top)</label>
+            <default>0</default>
+            <min>-5</min>
+            <max>5</max>
+        </entry>
+        <entry name="lyricsOffsetMs" type="Int">
+            <label>Lyrics timing adjustment in milliseconds (positive = earlier)</label>
+            <default>0</default>
+            <min>-10000</min>
+            <max>10000</max>
+        </entry>
+        <entry name="lyricsFontSize" type="Int">
+            <default>36</default>
+            <min>6</min>
+            <max>72</max>
+        </entry>
+        <entry name="lyricsFontFamily" type="String">
+            <default></default>
+        </entry>
+        <entry name="lyricsColorMode" type="String">
+            <label>theme, custom, or album (colors picked from the album art)</label>
+            <default>album</default>
+        </entry>
+        <entry name="lyricsTextColor" type="String">
+            <default>#ffe927</default>
+        </entry>
+        <entry name="lyricsBrightness" type="Int">
+            <label>-100 (black) to +100 (white)</label>
+            <default>-5</default>
+            <min>-100</min>
+            <max>100</max>
+        </entry>
+        <entry name="lyricsOpacity" type="Int">
+            <label>Opacity in percent</label>
+            <default>100</default>
+            <min>0</min>
+            <max>100</max>
+        </entry>
+        <entry name="lyricsInactiveColorMode" type="String">
+            <label>auto (derived from the lyrics color) or custom</label>
+            <default>auto</default>
+        </entry>
+        <entry name="lyricsInactiveColor" type="String">
+            <default>#ffffff</default>
+        </entry>
+        <entry name="lyricsInactiveOpacity" type="Int">
+            <label>Opacity of lines other than the current one, in percent of the lyrics opacity</label>
+            <default>72</default>
+            <min>0</min>
+            <max>100</max>
+        </entry>
+
+        <!-- Track information -->
+        <entry name="showAlbumCover" type="Bool">
+            <default>true</default>
+        </entry>
+        <entry name="fetchAlbumCoverHttps" type="Bool">
+            <default>false</default>
+        </entry>
+        <entry name="showTitle" type="Bool">
+            <default>true</default>
+        </entry>
+        <entry name="titleFontSize" type="Int">
+            <default>36</default>
+            <min>6</min>
+            <max>72</max>
+        </entry>
+        <entry name="titleFontFamily" type="String">
+            <default></default>
+        </entry>
+        <entry name="titleTextColor" type="String">
+            <default>#ffffff</default>
+        </entry>
+        <entry name="titleBrightness" type="Int">
+            <label>-100 (black) to +100 (white)</label>
+            <default>0</default>
+            <min>-100</min>
+            <max>100</max>
+        </entry>
+        <entry name="titleOpacity" type="Int">
+            <label>Opacity in percent</label>
+            <default>100</default>
+            <min>0</min>
+            <max>100</max>
+        </entry>
+        <entry name="showArtist" type="Bool">
+            <default>true</default>
+        </entry>
+        <entry name="artistFontSize" type="Int">
+            <default>20</default>
+            <min>6</min>
+            <max>72</max>
+        </entry>
+        <entry name="artistFontFamily" type="String">
+            <default></default>
+        </entry>
+        <entry name="artistTextColor" type="String">
+            <default>#ffffff</default>
+        </entry>
+        <entry name="artistBrightness" type="Int">
+            <label>-100 (black) to +100 (white)</label>
+            <default>0</default>
+            <min>-100</min>
+            <max>100</max>
+        </entry>
+        <entry name="artistOpacity" type="Int">
+            <label>Opacity in percent</label>
+            <default>85</default>
+            <min>0</min>
+            <max>100</max>
+        </entry>
+
+        <!-- Distances from the album art -->
+        <entry name="lyricsGap" type="Int">
+            <label>Space between the album art and the lyrics, in pixels</label>
+            <default>87</default>
+            <min>0</min>
+            <max>300</max>
+        </entry>
+        <entry name="infoGap" type="Int">
+            <label>Space between the album art and the title/artist, in pixels</label>
+            <default>42</default>
+            <min>0</min>
+            <max>300</max>
+        </entry>
+
+        <!-- Title / artist colors and effects -->
+        <entry name="titleColorMode" type="String">
+            <label>theme, custom or album</label>
+            <default>theme</default>
+        </entry>
+        <entry name="artistColorMode" type="String">
+            <label>theme, custom or album</label>
+            <default>theme</default>
+        </entry>
+        <entry name="titleEffect" type="String">
+            <label>Always-on title effect (see ScrollingText.qml)</label>
+            <default>none</default>
+        </entry>
+        <entry name="artistEffect" type="String">
+            <label>Always-on artist effect (see ScrollingText.qml)</label>
+            <default>none</default>
+        </entry>
+        <entry name="infoEffectIntensity" type="Int">
+            <default>50</default>
+            <min>0</min>
+            <max>100</max>
+        </entry>
+
+        <!-- Album art -->
+        <entry name="artCornerRadius" type="Int">
+            <label>Corner rounding in percent of the art size (50 = circle)</label>
+            <default>3</default>
+            <min>0</min>
+            <max>50</max>
+        </entry>
+        <entry name="showProgressBar" type="Bool">
+            <default>false</default>
+        </entry>
+        <entry name="artBorderEffect" type="String">
+            <label>Animated border effect (see ArtBorder.qml)</label>
+            <default>bloom</default>
+        </entry>
+        <entry name="artBorderPlacement" type="String">
+            <label>outer (around the art) or inner (over the art's edge)</label>
+            <default>outer</default>
+        </entry>
+        <entry name="artBorderReactive" type="Bool">
+            <label>Make the regular border effects follow the music</label>
+            <default>true</default>
+        </entry>
+        <entry name="artBorderWidth" type="Int">
+            <default>4</default>
+            <min>1</min>
+            <max>16</max>
+        </entry>
+        <entry name="artBorderSpeed" type="Int">
+            <label>Animation speed in percent</label>
+            <default>310</default>
+            <min>10</min>
+            <max>400</max>
+        </entry>
+        <entry name="artBorderIntensity" type="Int">
+            <default>100</default>
+            <min>0</min>
+            <max>100</max>
+        </entry>
+        <entry name="artBorderColorMode" type="String">
+            <label>album, theme or custom</label>
+            <default>album</default>
+        </entry>
+        <entry name="artBorderColor" type="String">
+            <default>#ffffff</default>
+        </entry>
+        <entry name="artBorderColor2" type="String">
+            <default>#ffffff</default>
+        </entry>
+
+        <!-- Text shadow -->
+        <entry name="textShadowLyrics" type="Bool">
+            <default>false</default>
+        </entry>
+        <entry name="textShadowTitle" type="Bool">
+            <default>true</default>
+        </entry>
+        <entry name="textShadowArtist" type="Bool">
+            <default>true</default>
+        </entry>
+        <entry name="textShadowColorMode" type="String">
+            <label>custom or album</label>
+            <default>album</default>
+        </entry>
+        <entry name="textShadowColor" type="String">
+            <default>#666666</default>
+        </entry>
+        <entry name="textShadowOpacity" type="Int">
+            <default>100</default>
+            <min>0</min>
+            <max>100</max>
+        </entry>
+        <entry name="textShadowBlur" type="Int">
+            <default>15</default>
+            <min>0</min>
+            <max>100</max>
+        </entry>
+        <entry name="textShadowDistance" type="Int">
+            <default>6</default>
+            <min>0</min>
+            <max>30</max>
+        </entry>
+        <entry name="textShadowAngle" type="Int">
+            <label>Shadow direction in degrees (0 = right, 90 = down)</label>
+            <default>60</default>
+            <min>0</min>
+            <max>359</max>
+        </entry>
+
+        <!-- Frosted wallpaper -->
+        <entry name="wallpaperBlur" type="String">
+            <label>off, lyrics or all (lyrics, title and artist)</label>
+            <default>off</default>
+        </entry>
+        <entry name="wallpaperBlurStrength" type="Int">
+            <default>52</default>
+            <min>0</min>
+            <max>100</max>
+        </entry>
+        <entry name="wallpaperBlurTint" type="Int">
+            <default>100</default>
+            <min>0</min>
+            <max>100</max>
+        </entry>
+        <entry name="wallpaperBlurTintColor" type="String">
+            <default>#ffffff</default>
+        </entry>
+        <entry name="wallpaperBlurSoftness" type="Int">
+            <label>How soft the edges of the blur shape are, in percent</label>
+            <default>50</default>
+            <min>0</min>
+            <max>100</max>
+        </entry>
+        <entry name="wallpaperBlurPadding" type="Int">
+            <default>22</default>
+            <min>0</min>
+            <max>100</max>
+        </entry>
+    </group>
+</kcfg>
