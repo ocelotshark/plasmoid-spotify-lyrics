@@ -3,6 +3,8 @@
 KDE widget for Spotify with a custom layout, effects and playback buttons, keeping live lyrics gorgeously
 updated on your desktop!
 
+**[Get it on the KDE Store](https://store.kde.org/p/2379002)**
+
 ![Rainbow lyrics with an album-colored border](screenshots/neon-rainbow-lyrics.png)
 
 By Wesley Berthelot. Inspired by [plasmoid-spotify](https://github.com/LabyStudio/plasmoid-spotify) by
@@ -73,7 +75,8 @@ LabyStudio.
 ## Install
 
 **From Plasma:** right-click the desktop → **Add Widgets…** → **Get New Widgets…** → **Download New Plasma
-Widgets**, then search for "Spotify Lyrics".
+Widgets**, then search for "Spotify Lyrics" (by ocelotshark). It's also on the
+[KDE Store](https://store.kde.org/p/2379002).
 
 **From a release:** download the `.plasmoid` file from the
 [releases page](../../releases) and run:
